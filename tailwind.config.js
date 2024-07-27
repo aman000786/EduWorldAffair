@@ -1,0 +1,111 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./*.{html,js}", "./!(build|dist|.*)/**/*.{html,js}"],
+  theme: {
+    extend: {
+      colors: {
+        white: "#fff",
+        lightcyan: "#e4ffff",
+        "gray-1": "#333",
+        forestgreen: "#09b451",
+        black: "#000",
+        powderblue: "#89c4c4",
+        gray: {
+          "100": "#818080",
+          "200": "rgba(0, 0, 0, 0.62)",
+          "300": "rgba(0, 0, 0, 0.74)",
+          "400": "rgba(0, 0, 0, 0.42)",
+          "500": "rgba(0, 0, 0, 0.48)",
+          "600": "rgba(0, 0, 0, 0.18)",
+          "700": "rgba(33, 33, 33, 0.9)",
+        },
+        steelblue: "#1c8bc2",
+        gainsboro: "#d9d9d9",
+        silver: "#bfbfbf",
+      },
+      spacing: {},
+      fontFamily: {
+        poppins: "Poppins",
+        "source-sans-pro": "'Source Sans Pro'",
+        "arbutus-slab": "'Arbutus Slab'",
+        inika: "Inika",
+        inter: "Inter",
+        "open-sans": "'Open Sans'",
+        archivo: "Archivo",
+        roboto: "Roboto",
+        radley: "Radley",
+      },
+      borderRadius: {
+        "6xs-9": "6.9px",
+        "11xl": "30px",
+        "21xl": "40px",
+        "81xl": "100px",
+        sm: "14px",
+        "41xl": "60px",
+        "2xs-8": "10.8px",
+        "89xl": "108px",
+        "6xl": "25px",
+        "83xl": "102px",
+      },
+    },
+    fontSize: {
+      "5xl": "24px",
+      xl: "20px",
+      base: "16px",
+      "41xl": "60px",
+      "17xl": "36px",
+      "29xl": "48px",
+      "21xl": "40px",
+      "64xl-6": "83.6px",
+      "6xl": "25px",
+      sm: "14px",
+      "3xl-6": "22.6px",
+      lg: "18px",
+      "2xl-3": "21.3px",
+      mid: "17px",
+      "22xl-4": "41.4px",
+      "14xl": "33px",
+      "xl-2": "20.2px",
+      "11xl": "30px",
+      "16xl": "35px",
+      "9xl": "28px",
+      "2xl": "21px",
+      "51xl": "70px",
+      "6xl-9": "25.9px",
+      "mid-3": "17.3px",
+      inherit: "inherit",
+    },
+    screens: {
+      mq1350: {
+        raw: "screen and (max-width: 1350px)",
+      },
+      mq1325: {
+        raw: "screen and (max-width: 1325px)",
+      },
+      mq1300: {
+        raw: "screen and (max-width: 1300px)",
+      },
+      lg: {
+        max: "1200px",
+      },
+      mq1125: {
+        raw: "screen and (max-width: 1125px)",
+      },
+      mq1050: {
+        raw: "screen and (max-width: 1050px)",
+      },
+      mq800: {
+        raw: "screen and (max-width: 800px)",
+      },
+      mq750: {
+        raw: "screen and (max-width: 750px)",
+      },
+      mq450: {
+        raw: "screen and (max-width: 450px)",
+      },
+    },
+  },
+  corePlugins: {
+    preflight: false,
+  },
+};
